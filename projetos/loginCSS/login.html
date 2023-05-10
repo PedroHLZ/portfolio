@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO CSS ANIMAÇÕES</title>
+    <link rel="stylesheet" href="css/loginAnimation.css">
+</head>
+
+<body>
+ 
+    <div class="container">
+        <div class="box">
+
+<!-- ============== FORMULÁRIO ============== -->           
+            <form action="loginSucesso.html" target="_self">
+
+                <h2>Login</h2>
+
+                <div class="inputBox">
+                    <input type="text" id="usrname" name="usrname" required>
+                    <span>Usuário</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" id="pass" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <span>Senha</span>
+                    <i></i>
+                </div>
+<!-- ============== CAMPO DE REQUISITOS DE SENHA ============== -->
+                <div id="mensagem">
+                    <h6>A senha deve conter os seguintes:</h6>
+                    <p id="minuscula" class="invalid">Uma Letra <b>minúscula</b></p>
+                    <p id="maiuscula" class="invalid">Uma <b>Letra MAIÚSCULA</b></p>
+                    <p id="numero" class="invalid">Um <b>Número</b></p>
+                    <p id="minimo" class="invalid">Mínimo de <b>8 Caracteres</b></p>
+                </div>
+
+                <div class="links">
+                    <a href="#">Esqueci a Senha</a>
+                    <a href="#">Cadastre-se</a>
+                </div>
+<!-- ============== ENVIAR FORMULÁRIO ============== -->
+                <input type="submit" value="Entrar">
+
+            </form>
+        </div>
+<!-- ============== IMAGENS DE ANIMAÇÕES ============== -->
+        <div>
+            <img class="astronauta" src="img/astronauta.png">
+            <img class="meteorito1" src="img/meteorito1.png">
+            <img class="meteorito2" src="img/meteorito2.png">
+            <img class="meteorito3" src="img/meteorito3.png">
+            <img class="terra" src="img/terra.png">
+            <img class="lua" src="img/lua.png">
+            <img class="satelite" src="img/satelite.png">
+            <img class="planeta1" src="img/planeta1.png">
+            <img class="planeta2" src="img/planeta2.png">
+            <img class="estrelacadente" src="img/estrelacadente.png">
+        </div>
+    </div>
+<!-- ============== VALIDAR CAMPO SENHA ============== -->
+    <script src="js/valid_login.js"></script>
+</body>
+</html>

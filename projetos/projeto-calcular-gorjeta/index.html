@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styler.css">
+    <title>Divisor de Conta por Pessoa com Gorjeta</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Divisor de Conta por Pessoa</h1>
+        <div id="line"></div>
+<!-- formulario de colerta de dados -->
+        <form id="calcForm">
+            <div id="calculator" class="calculator">
+<!-- pega o valor do Consumo -->
+                <label for="numPeople">
+                    <h2>Valor do Consumo: </h2>
+                </label>
+                <input type="number" placeholder="R$ 100,00" name="conta" id="conta" class="bill-input" required
+                    step=".01">
+<!-- avaliação de serviço prestado -->
+                <label for="numPeople">
+                    <h2>Como Foi Seu Serviço?</h2>
+                </label>
+                <select id="serviceQuali" class="formSelect" required>
+                    <option value="0.20">
+                        5 Estrelas 20%
+                    </option>
+                    <option value="0.15">
+                        4 Estrelas 15%
+                    </option>
+                    <option value="0.10">
+                        3 Estrelas 10%
+                    </option>
+                    <option value="0.05">
+                        2 Estrelas 5%
+                    </option>
+                    <option value="0">
+                        1 Estrela 0%
+                    </option>
+                </select>
+<!-- Qtd de pessoas que vai dividir a conta -->
+                <label for="numPeople">
+                    <h2>Numero de Pessoas: </h2>
+                </label>
+                <input type="number" placeholder="1" name="people" id="people" class="person-input" value="1" required>
+            
+            </div>
+<!-- mosta os resultados -->
+            <div class="resultados">
+
+                <div class="resultados-content">
+                    <div>
+                        <h3>Valor da gorjeta</h3>
+                        <p class="text-s">/ por Pessoa</p>
+                    </div>
+                    <div id="totalTip" class="resultados-content-value">
+                        <span class="resultados-content-value" id="tip">00,00</span>
+                    </div>
+                </div>
+
+                <div class="resultados-content2">
+                    <div>
+                        <h3>Total</h3>
+                        <p class="text-s">/ por Pessoa</p>
+                    </div>
+                    <div id="fulltotalpessoa" class="resultados-content-value">
+                        <span class="resultados-content-value" id="pessoatip">00,00</span>
+                    </div>
+                </div>
+
+                <div class="resultados-content3">
+                    <div>
+                        <h3>Total Geral</h3>
+                    </div>
+                    <div id="fulltotalTip" class="resultados-content-value">
+                        <span class="resultados-content-value" id="fulltip">00,00</span>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="button-medium" id="formSubmit">Calcular!</button>
+                </div>
+
+            </div>
+            </div>
+
+        </form>
+
+    </main>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
