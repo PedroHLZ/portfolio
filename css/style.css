@@ -486,12 +486,14 @@ body {
 .box-projetos img {
   width: 300px;
   height: 200px;
+  border-radius: 2px;
 }
 
 @media (max-width: 999px) {
   .box-projetos img {
     width: 250px;
     height: 150px;
+    
   }
 }
 
