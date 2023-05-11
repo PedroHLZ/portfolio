@@ -6,7 +6,7 @@
  por favor, não hesite em entrar em contato comigo.
                
 # Eu já tenho conhecimento de tecnologias como
- # * HTML, CSS, JavaScript, PHP, MySQL, Python, POWER-BI, Photoshop e CorelDraw.
+ * HTML, CSS, JavaScript, PHP, MySQL, Python, POWER-BI, Photoshop e CorelDraw.
 
  Você pode conferir meus projetos na seção de Projetos. 
 
