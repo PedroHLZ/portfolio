@@ -2,7 +2,6 @@
 
   
 Portfólio pessoal desenvolvido por Pedro Queiroz. O site consiste em diferentes seções, incluindo um menu, uma seção "Início", uma seção "Quem Sou", uma seção "Projetos" e uma seção "Habilidades". O código está escrito em HTML e CSS, com algumas funcionalidades adicionais usando JavaScript.
-<br><br>
 
 ## Estrutura do Código🚀
 
