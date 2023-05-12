@@ -1,6 +1,6 @@
-# Portfólio
+# <img src="https://storage.ko-fi.com/cdn/cup-border.png" width="25px" >Portfólio
 
-  <img src="https://storage.ko-fi.com/cdn/cup-border.png" width="20px" >
+  
 Portfólio pessoal desenvolvido por Pedro Queiroz. O site consiste em diferentes seções, incluindo um menu, uma seção "Início", uma seção "Quem Sou", uma seção "Projetos" e uma seção "Habilidades". O código está escrito em HTML e CSS, com algumas funcionalidades adicionais usando JavaScript.
 <br>
 [![](https://skillicons.dev/icons?i=html,css,sass,js,github,ps,)]()
