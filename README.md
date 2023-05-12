@@ -1,6 +1,6 @@
 # Portfólio
 
-  <img src="https://storage.ko-fi.com/cdn/cup-border.png">
+  <img src="https://storage.ko-fi.com/cdn/cup-border.png" width="20px" >
 Portfólio pessoal desenvolvido por Pedro Queiroz. O site consiste em diferentes seções, incluindo um menu, uma seção "Início", uma seção "Quem Sou", uma seção "Projetos" e uma seção "Habilidades". O código está escrito em HTML e CSS, com algumas funcionalidades adicionais usando JavaScript.
 <br>
 [![](https://skillicons.dev/icons?i=html,css,sass,js,github,ps,)]()
@@ -34,7 +34,7 @@ A seção "Habilidades" é definida na tag `<habilidades class="conteudo" id="ha
 Este código é uma representação do site pessoal de Pedro Queiroz, destacando sua experiência, projetos e habilidades. Sinta-se à vontade para explorar o código, fazer melhorias ou personalizá-lo de acordo com suas necessidades.
 
 ## Autor
-  <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png">
+  <img src="https://avatars.githubusercontent.com/u/123014853?s=40&v=4">
 
 - Pedro Queiroz
 - LinkedIn: [Pedro Queiroz](https://www.linkedin.com/in/pedrohlqueiroz/)
