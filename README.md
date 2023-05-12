@@ -3,7 +3,7 @@
   
 Portfólio pessoal desenvolvido por Pedro Queiroz. O site consiste em diferentes seções, incluindo um menu, uma seção "Início", uma seção "Quem Sou", uma seção "Projetos" e uma seção "Habilidades". O código está escrito em HTML e CSS, com algumas funcionalidades adicionais usando JavaScript.
 
-## Estrutura do Código🚀
+## 💻Estrutura do Código🚀
 
 O código está organizado em diferentes seções, cada uma representando uma parte específica do site. Aqui está uma visão geral das seções principais:
 
@@ -19,7 +19,7 @@ A seção "Início" é definida na tag `<main class="conteudo" id="inicio">` e a
 
 A seção "Quem Sou" é definida na tag `<sobre class="conteudo" id="quem-sou">` e fornece informações sobre Pedro Queiroz. Inclui um título, uma imagem e um parágrafo que descreve suas habilidades e experiência. Há também uma menção aos projetos pessoais e a disponibilidade para contatar Pedro Queiroz.
 
-#### Projetos💻
+#### Projetos
 
 A seção "Projetos" é definida na tag `<projetos class="conteudo" id="projetos">` e apresenta uma coleção de projetos pessoais. Cada projeto é representado por uma caixa com uma imagem, título, tecnologias utilizadas e uma descrição do projeto. Os projetos incluem links para visualizar os projetos online.
 
