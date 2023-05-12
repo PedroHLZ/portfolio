@@ -37,5 +37,5 @@ Este código é uma representação do site pessoal de Pedro Queiroz, destacando
 - Pedro Queiroz
 - LinkedIn: [Pedro Queiroz](https://www.linkedin.com/in/pedrohlqueiroz/)
 <br>
-[![](https://skillicons.dev/icons?i=html,css,sass,js,github,ps,)]()
+[(https://skillicons.dev/icons?i=html,css,sass,js,github,ps,)]
 ---
