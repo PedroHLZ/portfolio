@@ -33,7 +33,7 @@ A seção "Habilidades" é definida na tag `<habilidades class="conteudo" id="ha
 Este código é uma representação do site pessoal de Pedro Queiroz, destacando sua experiência, projetos e habilidades. Sinta-se à vontade para explorar o código, fazer melhorias ou personalizá-lo de acordo com suas necessidades.
 
 ## Autor
-  <img src="https://avatars.githubusercontent.com/u/123014853?s=40&v=4"width="85px">
+  <img src="https://avatars.githubusercontent.com/u/123014853?s=40&v=4" width="85px">
 
 - Pedro Queiroz
 - LinkedIn: [Pedro Queiroz](https://www.linkedin.com/in/pedrohlqueiroz/)
