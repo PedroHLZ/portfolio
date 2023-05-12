@@ -26,7 +26,9 @@ A seção "Projetos" é definida na tag `<projetos class="conteudo" id="projetos
 ####  Habilidades
 
 A seção "Habilidades" é definida na tag `<habilidades class="conteudo" id="habilidades">` e destaca as habilidades de Pedro Queiroz. Cada habilidade é acompanhada por uma descrição que detalha os conhecimentos e experiências relacionados a essa habilidade.
-
+<br>
+[![](https://skillicons.dev/icons?i=html,css,sass,js,github,ps,)]()
+<br>
 ## :memo:  Considerações Finais
 
 Este código é uma representação do site pessoal de Pedro Queiroz, destacando sua experiência, projetos e habilidades. Sinta-se à vontade para explorar o código, fazer melhorias ou personalizá-lo de acordo com suas necessidades.
@@ -36,6 +38,6 @@ Este código é uma representação do site pessoal de Pedro Queiroz, destacando
 
 - Pedro Queiroz
 - LinkedIn: [Pedro Queiroz](https://www.linkedin.com/in/pedrohlqueiroz/)
-<br>
-[![](https://skillicons.dev/icons?i=html,css,sass,js,github,ps,)]()
+
+
 
