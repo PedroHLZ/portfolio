@@ -20,7 +20,6 @@ body {
   width: 100%;
   overflow: hidden;
   display: flex;
-  flex-flow: row wrap;
   padding: 5px;
   background: rgb(30, 38, 43);
   align-items: center;
@@ -50,9 +49,7 @@ body {
   letter-spacing: 3px;
   cursor: pointer;
   text-transform: uppercase;
-  width: 70px;
-  padding-left: 5%;
-
+  padding-left: 10%;
 }
 
 .logo :hover {
@@ -94,16 +91,16 @@ body {
 .cabecalho-menu {
   display: flex;
   gap: 22px;
-  padding-right: 5%;
-  padding-top: inherit;
+  padding: 1rem 1rem;
+
 }
 
 @media (max-width: 999px) {
   .cabecalho-menu {
     display: flex;
-    gap: 5px;
-    padding-top: inherit;
-    padding-right: 50px;
+    gap: 10px;
+    justify-content: center;
+    padding: 1rem 1rem;
   }
 }
 
@@ -142,7 +139,6 @@ body {
 /* ##  Inicio  ## */
 .conteudo {
   border-top: 2px solid #fffefe;
-  padding: auto;
 }
 
 .conteudo-inicio {

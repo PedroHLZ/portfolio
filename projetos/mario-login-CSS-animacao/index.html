@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO: Mario animação em css com login.</title>
+    <link rel="stylesheet" href="css/styler.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box">
+            <!-- ============== FORMULÁRIO ============== -->
+            <form onsubmit="return fazerLogin()" id="loginForm" style="display: block;">
+                <h2>Fazça o login e Veja o Play</h2>
+                <!-- Campos de login -->
+                <div class="inputBox">
+                    <input type="text" id="usrname" name="usrname" required>
+                    <span>Usuário</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="pass" name="psw" required>
+                    <span>Senha</span>
+                    <i></i>
+                </div>
+                <!-- ============== CAMPO DE REQUISITOS DE SENHA ============== -->
+                <div id=" links">
+                    <p>="usuario"</p>
+                    <p>="senha"</p>
+                </div>
+
+                <div class="links">
+                    <a href="#">Esqueci a Senha</a>
+                    <a href="#">Cadastre-se</a>
+                </div>
+                <!-- ============== ENVIAR FORMULÁRIO ============== -->
+                <input type="submit" value="Entrar">
+
+            </form>
+
+        </div>
+        <!-- ============== ANIMAÇÕES ============== -->
+        <div id="mario">
+            <img class="mario" src="img/mario.gif" alt="Mario" style="width: 120px;">
+        </div>
+        <div id="img">
+            <img class="bloco" src="img/bloco.jpg" alt="bloco">
+            <img class="tubo" src="img/tubo.jpg" alt="tubo">
+            <img class="gold" src="img/gold.gif" alt="gold">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <img class="nuvem1" src="img/nuvem1.png" alt="nuvem1">
+            <img class="nuvem2" src="img/nuvem2.png" alt="nuvem2">
+        </div>
+
+    </div>
+    <!-- ============== VALIDAR CAMPO SENHA ============== -->
+    <script src="js/valid_login.js"></script>
+
+</body>
+
+</html>

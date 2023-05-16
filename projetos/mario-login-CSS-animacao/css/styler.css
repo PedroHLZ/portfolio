@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    background-image: url(/projetos/mario-login-CSS-animacao/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-position-y: bottom;
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 590px;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    transition: height 1s;
+    top: 30px;
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.box form {
+    position: absolute;
+    outline: none;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 4px solid #bc6400;
+    padding: 30px 36px;
+    z-index: 2;
+}
+
+.box h2 {
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 36px;
+}
+
+.box form .inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.box form .inputBox input {
+    position: relative;
+    width: 80%;
+    padding: 28px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #313131;
+    font-size: 1em;
+    transition: 0.5s;
+    z-index: 10;
+    font-weight: 600;
+}
+
+.box form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 27px 1px 2px;
+    pointer-events: none;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.box form .inputBox input:valid~span,
+.box form .inputBox input:focus~span {
+    color: #ffffff;
+    font-size: 0.6em;
+    letter-spacing: 0.5em;
+    transform: translateY(-25px);
+
+}
+
+.box form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ecc538;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.box form .inputBox input:valid~i,
+.box form .inputBox input:focus~i {
+    height: 40px;
+}
+
+.box form .links {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box form .links a {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.box form .links a:hover,
+.box form .links a:nth-child(2) {
+    color: #000000;
+
+}
+
+.box form input[type="submit"] {
+    padding: 9px 125px;
+    outline: none;
+    border-radius: 4px;
+    background: #ecc538;
+    border: 3px solid #bc6400;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.box form input[type="submit"]:hover {
+transform: scale(1.02);
+    background: #ff9913;
+    border: 3px solid #bc8a00;
+}
+#mensagem {
+    color: #ffffff;
+    position: relative;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+
+#mensagem p {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+
+}
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    top: 70%;
+    left: 0%;
+}
+
+.walk1 {
+    animation-name: walkAnimation1;
+    animation-duration: 3.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes walkAnimation1 {
+    0% { left: 0; }
+    100% { left: 36%; }
+}
+
+.jump {
+    animation-name: jumpAnimation;
+    animation-duration:  0.3s;
+    animation-timing-function: cubic-bezier(0.47, 0.48, 0.51, 0.52);
+    top: 70%;
+    left: 36%;
+}
+
+@keyframes jumpAnimation {
+    0% { transform: translateY(0);left: 36%; }
+    50% { transform: translateY(-110%); left: 37%;}
+    100% { transform: translateY(0); left: 38%;}
+}
+
+.walk2 {
+    animation-name: walkAnimation2;
+    animation-duration: 3.6s;
+    animation-timing-function: linear;
+}
+
+@keyframes walkAnimation2 {
+    0% { left: 38%; }
+    100% { left: 78%; }
+}
+
+.jump2 {
+    animation-name: jumpAnimation2;
+    animation-duration:  0.3s;
+    animation-timing-function: cubic-bezier(0.47, 0.48, 0.51, 0.52);
+    top: 70%;
+    left: 77%;
+}
+
+@keyframes jumpAnimation2 {
+    0% { transform: translateY(0);left: 77%; }
+    50% { transform: translateY(-130%); left: 80%;}
+    100% { transform: translateY(-120%); left: 83%;}
+}
+
+.stop {
+    /* animation-name: stop; */
+    animation-duration: 1s;
+    animation-timing-function:  cubic-bezier(0.47, 0.48, 0.51, 0.52);
+    top: 68%;
+    left: 83%;
+}
+
+@keyframes stop {
+    0% { transform: translateY(-120%); }
+    100% { transform: translateY(0); }
+}
+
+
+.gold {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    top: 54%;
+    left: 38.3%;
+}
+
+.jumpgold {
+    animation-name: jumpgoldAnimation;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    top: 54%;
+    left: 38.3%;
+}
+
+@keyframes jumpgoldAnimation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-70px); }
+}
+.stopgold {
+    animation-play-state: paused;
+    top: 47%;
+    left: 38.3%;
+}
+.bloco {
+    z-index: 2;
+    position: absolute;
+    top: 53.4%;
+    left: 37.52%;
+    width: 87px;
+    HEIGHT: 74px;
+}
+.tubo {
+    z-index: 2;
+    position: absolute;
+    top: 68.5%;
+    left: 83%;
+    width:150px;
+    HEIGHT: 130px;
+}
+.logo {
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width:300px;
+    HEIGHT: 200px;
+}
+
+@keyframes moveNuvem1 {
+    0% { right: -200px; }
+    100% { right: 70%; }
+}
+
+@keyframes moveNuvem2 {
+    0% { right: -200px; }
+    100% { right: 40%; }
+}
+
+.nuvem1 {
+    position: absolute;
+    top: 50px;
+    left: -200px;
+    animation-name: moveNuvem1;
+    animation-duration: 200s;
+    animation-timing-function:  cubic-bezier(0.47, 0.48, 0.51, 0.52);
+    animation-iteration-count: infinite;
+}
+
+.nuvem2 {
+    position: absolute;
+    top: 150px;
+    right: -500px;
+    animation-name: moveNuvem2;
+    animation-duration: 200s;
+    animation-timing-function:  cubic-bezier(0, 0, 0, 0);
+    animation-iteration-count: infinite;
