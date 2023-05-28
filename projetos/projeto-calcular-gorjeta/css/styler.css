@@ -38,10 +38,19 @@ button {
 .button-medium {
     background-color: #00C896;
     color: #1D1D1D;
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: larger;
+    line-height: normal;
+    padding-right: 20px;
+    margin-top: 10px;
 }
 
 .button-medium:hover {
-    background-color: #F2ECFF;
+    background-color: #00ffbf;
 }
 
 .errorEmpty {
@@ -65,9 +74,10 @@ body {
         flex-direction: column;
         align-items: center;
         height: 100vh;
-        justify-content: center;
+        justify-content: flex-start;
         background-color: #F2ECFF;
     }
+    
 }
 
 header {
@@ -114,14 +124,14 @@ h1 {
 }
 
 #line{
-    width: 350px;
+    width: 100%;
     height: 4px;
     background-color: #00C896;
 }
 
 @media (max-width: 780px) {
     #line{
-        width: 250px;
+        width: 100%;
         height: 4px;
         background-color: #00C896;
     }
@@ -170,8 +180,8 @@ h1 {
     font-size: larger;
     text-align: right;
     line-height: normal;
-    padding-right: 20px;
-    margin-top: 10px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .bill-input {
@@ -223,13 +233,12 @@ h1 {
 .resultados {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: calc(50% - 101px);
-    margin: 30px;
+    width: calc(50% - 127px);
+    margin: 95px 34px 50px;
     border-radius: 4px;
-    background-color: #1D1D1D;
     overflow: hidden;
-    padding: 25px;
+    justify-content: space-evenly;
+    background-color: #1D1D1D;
 }
 
 @media (max-width: 780px) {
@@ -249,6 +258,9 @@ h1 {
 .resultados-content {
     display: flex;
     justify-content: space-between;
+    background-color: #1D1D1D;
+    border-radius: 4px;
+    padding: 25px;
 }
 
 .resultados-content-value {
@@ -262,13 +274,17 @@ h1 {
 .resultados-content2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    background-color: #1D1D1D;
+    border-radius: 4px;
+    padding: 25px;
 }
 
 .resultados-content3 {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    background-color: #1D1D1D;
+    border-radius: 4px;
+    padding: 25px;
 }
 
 
@@ -318,15 +334,14 @@ h1 {
 }
 
 .formSelect {
-
-    border: none;
+border: none;
     background-color: #00C896;
-    height: 40px;
+    height: 45px;
     border-radius: 4px;
     color: #1D1D1D;
     font-weight: bold;
     font-size: larger;
     line-height: normal;
-    padding-right: 20px;
+    padding: 8px;
     margin-top: 10px;
 }

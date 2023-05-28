@@ -28,6 +28,7 @@
     display: flex;
     transition: height 1s;
     top: 30px;
+    z-index: 3;
 }
 
 .line {
@@ -56,7 +57,7 @@
     letter-spacing: 0.1em;
     text-transform: capitalize;
     font-family: monospace;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .box form .inputBox {
@@ -174,7 +175,7 @@ transform: scale(1.02);
     position: absolute;
     bottom: 0;
     width: 120px;
-    top: 70%;
+    top: 64.5%;
     left: 0%;
 }
 
@@ -187,7 +188,7 @@ transform: scale(1.02);
 
 @keyframes walkAnimation1 {
     0% { left: 0; }
-    100% { left: 36%; }
+    100% { left: 35%; }
 }
 
 .jump {
@@ -195,13 +196,13 @@ transform: scale(1.02);
     animation-duration:  0.3s;
     animation-timing-function: cubic-bezier(0.47, 0.48, 0.51, 0.52);
     top: 70%;
-    left: 36%;
+    left: 35%;
 }
 
 @keyframes jumpAnimation {
-    0% { transform: translateY(0);left: 36%; }
-    50% { transform: translateY(-110%); left: 37%;}
-    100% { transform: translateY(0); left: 38%;}
+    0% { transform: translateY(0);left: 35%; }
+    50% { transform: translateY(-110%); left: 36%;}
+    100% { transform: translateY(10); left: 38%;}
 }
 
 .walk2 {
@@ -233,8 +234,10 @@ transform: scale(1.02);
     /* animation-name: stop; */
     animation-duration: 1s;
     animation-timing-function:  cubic-bezier(0.47, 0.48, 0.51, 0.52);
-    top: 68%;
+    top: 69.5%;
     left: 83%;
+    width: 20px;
+    height: 20px;
 }
 
 @keyframes stop {
@@ -247,8 +250,8 @@ transform: scale(1.02);
     position: absolute;
     bottom: 0;
     width: 50px;
-    top: 54%;
-    left: 38.3%;
+    top: 53.5%;
+    left: 38.0%;
 }
 
 .jumpgold {
@@ -265,24 +268,24 @@ transform: scale(1.02);
 }
 .stopgold {
     animation-play-state: paused;
-    top: 47%;
-    left: 38.3%;
+    top: 45%;
+    left: 37.8%;
 }
 .bloco {
     z-index: 2;
     position: absolute;
     top: 53.4%;
     left: 37.52%;
-    width: 87px;
-    HEIGHT: 74px;
+    width: 59px;
+    HEIGHT: 53px;
 }
 .tubo {
     z-index: 2;
     position: absolute;
     top: 68.5%;
     left: 83%;
-    width:150px;
-    HEIGHT: 130px;
+    width: 100px;
+    HEIGHT: 87px;
 }
 .logo {
     z-index: 2;
