@@ -215,7 +215,7 @@
     }
 
     .home-content {
-        max-width: 60rem;
+        max-width: 68rem;
         z-index: 99;
         display: flex;
         flex-wrap: wrap;
