@@ -267,6 +267,10 @@
             background-position: 0 0;
         }
     }
+
+    .header {
+        padding: 2rem 20% 0 2%;
+    }
 }
 
 /* Tamanho de tela até 520px */
