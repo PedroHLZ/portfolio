@@ -109,3 +109,11 @@ window.addEventListener('scroll', () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 });
+//    modal    //
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
