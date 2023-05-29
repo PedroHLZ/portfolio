@@ -34,7 +34,7 @@
     }
 
     section {
-        padding: 10rem 4% 2rem;
+        padding: 12rem 4% 2rem;
     }
 
     .home {
@@ -197,6 +197,78 @@
     }
 }
 
+/* Tamanho de tela até 720px */
+@media(max-width:721px) {
+    .home {
+        display: flex;
+        align-items: center;
+        background: url(/img/perfil01.png) no-repeat;
+        background-size: 60%;
+        background-position: center;
+        background-position-y: 70%;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .animate.home-img {
+        width: 80%;
+    }
+
+    .home-content {
+        max-width: 60rem;
+        z-index: 99;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30%;
+    }
+
+    .home-imgHover {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .formacao .formacao-column {
+        max-width: 46%;
+    }
+
+    .about-content p {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 7.6rem;
+        line-height: 2;
+    }
+
+    .home-content .text-animate {
+        width: 50rem;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 3.5rem;
+    }
+
+    @keyframes homeBgText {
+
+        0%,
+        10%,
+        100% {
+            background-position: -50rem 0;
+        }
+
+        65%,
+        85% {
+            background-position: 0 0;
+        }
+    }
+}
+
 /* Tamanho de tela até 520px */
 @media(max-width:520px) {
     html {
@@ -249,13 +321,5 @@
 
     .home-content h1 {
         font-size: 5rem;
-    }
-}
-
-/* Tamanho de tela até 916px (altura) */
-@media(max-height:916px) {
-    .home-content {
-        max-width: 60rem;
-        margin-top: 13vh;
     }
 }

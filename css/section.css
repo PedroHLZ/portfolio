@@ -11,13 +11,11 @@ section {
     background: url(/img/perfil01.png) no-repeat;
     background-size: 40%;
     background-position: right;
-    padding-bottom: 6rem;
-    flex-wrap: wrap;
+    padding-bottom: 13rem;
     flex-direction: column;
-    align-content: flex-start;
-    background-color: var(--bg-color);
-    background-position-y: 150%;
-  }
+    background-position-y: 100%;
+    justify-content: center;
+}
   
   
   .home-content {
@@ -240,13 +238,13 @@ section {
   
   .about {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
     background-color: var(--second-bg-color);
     padding-bottom: 6rem;
-  }
+}
   
   .about .heading {
     text-align: left;
@@ -429,9 +427,7 @@ section {
     padding: 0 0.5rem 0.5rem 2.5rem;
     list-style: none;
   }
-  
-  
-  
+    
   .formacao-content .card {
     cursor: pointer;
     display: flex;
@@ -440,8 +436,9 @@ section {
     justify-content: space-around;
   }
   .formacao-content .card img {
-    width: 50rem;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
   .modal {
     display: none;
@@ -497,6 +494,7 @@ section {
     min-height: auto;
     padding-bottom: 7rem;
     background: var(--second-bg-color);
+    height: 100vh;
   }
   
   .skills-row {
@@ -664,7 +662,8 @@ section {
   .contateme {
     min-height: auto;
     padding-bottom: 7rem;
-  }
+    height: 100vh;
+}
   
   .contateme form {
     max-width: 70rem;
@@ -803,13 +802,13 @@ section {
   /* ##                             ## */
   .animate {
     position: absolute;
-    top: 0;
+    top: -1px;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 102%;
     background: var(--bg-color);
     z-index: 98;
-  }
+}
   
   .animate.home-img {
     width: 40%;
