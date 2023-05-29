@@ -35,8 +35,8 @@ body {
 /* Estilos do cabeçalho/menu */
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 1px;
+  left:1;
   width: 100%;
   padding: 20px 10%;
   display: flex;
@@ -60,7 +60,7 @@ body {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
 }
 
