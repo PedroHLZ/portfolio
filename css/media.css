@@ -234,7 +234,7 @@
 }
 
 /* Tamanho de tela até 371px */
-@media(max-width:375px) {
+@media(max-width:376px) {
     .home {
         justify-content: center;
     }
@@ -249,6 +249,20 @@
 
     .home-content h1 {
         font-size: 5rem;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 92%;
+
+ 
+    }
+    .sticky {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        top: 63px;
     }
 }
 
