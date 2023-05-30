@@ -440,8 +440,8 @@ section {
     justify-content: space-around;
   }
   .formacao-content .card img {
-    width: 50rem;
-    height: auto;
+    width: 100%;
+    height: 200px;
   }
   .modal {
     display: none;
