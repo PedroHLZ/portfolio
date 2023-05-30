@@ -442,6 +442,8 @@ section {
   .formacao-content .card img {
     width: 100%;
     height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
   }
   .modal {
     display: none;
