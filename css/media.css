@@ -253,9 +253,3 @@
 }
 
 /* Tamanho de tela até 916px (altura) */
-@media(max-height:916px) {
-    .home-content {
-        max-width: 60rem;
-        margin-top: 13vh;
-    }
-}
