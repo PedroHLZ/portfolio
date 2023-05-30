@@ -33,12 +33,12 @@ section {
     line-height: 1.3;
   }
   
-  .home-content .text-animate {
+  .home-content .text-animat {
     position: relative;
     width: 32.8rem;
   }
   
-  .home-content .text-animate h3 {
+  .home-content .text-animat h3 {
     font-size: 2.3rem;
     font-weight: 700;
     color: transparent;
@@ -49,12 +49,12 @@ section {
     background-position: -33rem 0;
   }
   
-  .home.show-animate .home-content .text-animate h3 {
+  .home.show-animat .home-content .text-animat h3 {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
   }
   
-  .home-content .text-animate h3::before {
+  .home-content .text-animat h3::before {
     content: "";
     position: absolute;
     top: 0;
@@ -65,7 +65,7 @@ section {
     z-index: -1;
   }
   
-  .home.show-animate .home-content .text-animate h3::before {
+  .home.show-animat .home-content .text-animat h3::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
   }
@@ -801,7 +801,7 @@ section {
   /* ##                             ## */
   /* ##   reload/scroll animation   ## */
   /* ##                             ## */
-  .animate {
+  .animat {
     position: absolute;
     top: 0;
     right: 0;
@@ -811,38 +811,38 @@ section {
     z-index: 98;
   }
   
-  .animate.home-img {
+  .animat.home-img {
     width: 40%;
   }
   
-  .logo .animate,
-  .navbar .animate,
-  #menu-icon .animate,
-  .home.show-animate .animate {
+  .logo .animat,
+  .navbar .animat,
+  #menu-icon .animat,
+  .home.show-animat .animat {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
   }
   
-  .animate.scroll {
+  .animat.scroll {
     transition: 1s ease;
     transition-delay: calc(.3s / var(--i));
     animation: none;
   }
   
-  section:nth-child(odd) .animate.scroll,
-  .footer .animate.scroll {
+  section:nth-child(odd) .animat.scroll,
+  .footer .animat.scroll {
     background: var(--second-bg-color);
   }
   
-  .formacao .formacao-box .animate.scroll {
+  .formacao .formacao-box .animat.scroll {
     width: 110%;
     height: 120%;
   }
   
-  .about.show-animate .animate.scroll,
-  .formacao.show-animate .animate.scroll,
-  .skills.show-animate .animate.scroll,
-  .contateme.show-animate .animate.scroll {
+  .about.show-animat .animat.scroll,
+  .formacao.show-animat .animat.scroll,
+  .skills.show-animat .animat.scroll,
+  .contateme.show-animat .animat.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;
   }

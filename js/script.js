@@ -84,9 +84,9 @@ window.addEventListener('scroll', () => {
                     link.classList.remove("active");
                 }
             });
-            sec.classList.add("show-animate");
+            sec.classList.add("show-animat");
         } else {
-            sec.classList.remove("show-animate");
+            sec.classList.remove("show-animat");
         }
     });
 });
