@@ -41,6 +41,10 @@
         background-position: 100% 88%;
     }
 
+    .home-content {
+        padding-top: 20%;
+      }
+
     .animat.home-img {
         width: 60%;
     }
