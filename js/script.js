@@ -84,9 +84,9 @@ window.addEventListener('scroll', () => {
                     link.classList.remove("active");
                 }
             });
-            sec.classList.add("show-animat");
+            sec.classList.add("show-animate");
         } else {
-            sec.classList.remove("show-animat");
+            sec.classList.remove("show-animate");
         }
     });
 });
@@ -109,11 +109,7 @@ window.addEventListener('scroll', () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 });
-//    modal    //
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-}
-
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+function openLinkInNewTab(url) {
+    // Abre o link em uma nova guia
+    window.open(url, '_blank');
 }
