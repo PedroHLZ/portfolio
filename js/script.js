@@ -64,7 +64,7 @@ button3.addEventListener('click', () => {
 
 
 
-//    header active nav    //
+// header active nav //
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -100,15 +100,19 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-//    header sticks scroll    //
+// header sticks scroll //
 window.addEventListener('scroll', () => {
     let header = document.querySelector("header");
     header.classList.toggle('sticky', window.scrollY > 100);
 
+    
     //    navbar responsivo remover quando clicar     //
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 });
+
+
+
 function openLinkInNewTab(url) {
     // Abre o link em uma nova guia
     window.open(url, '_blank');
