@@ -1,39 +1,33 @@
 
-//    formulario    //
+// Formulário de contato sem dependência de jQuery.
+const contactForm = document.getElementById('myForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', async event => {
+        event.preventDefault();
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = 'Enviando...';
 
-$(document).ready(function () {
-    // Intercepta o envio do formulário
-    $('#myForm').submit(function (e) {
-        e.preventDefault(); // Evita o envio normal do formulário
-
-        var form = $(this);
-        var formData = new FormData(form[0]);
-        var email = 'playlucas.hlz@gmail.com'; // Endereço de e-mail real
-
-        // Adiciona o endereço de e-mail real aos dados do formulário
-        formData.append('email', email);
-
-        // Envia o formulário usando o serviço FormSubmit
-        $.ajax({
-            url: 'https://formsubmit.co/playlucas.hlz@gmail.com',
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (response) {
-                // Ação a ser executada quando a resposta do servidor for recebida
-                console.log(response); // Exemplo: exibir resposta no console
-
-                // Limpa os campos do formulário
-                form.trigger('reset');
-            },
-            error: function (xhr, status, error) {
-                // Ação a ser executada em caso de erro na solicitação
-                console.log(error);
-            }
-        });
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/playlucas.hlz@gmail.com', {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { Accept: 'application/json' }
+            });
+            if (!response.ok) throw new Error('Falha no envio');
+            contactForm.reset();
+            submitButton.textContent = 'Mensagem enviada!';
+        } catch (error) {
+            submitButton.textContent = 'Não foi possível enviar';
+        } finally {
+            setTimeout(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            }, 3500);
+        }
     });
-});
+}
 
 
 //    trocar cor    //
@@ -98,6 +92,16 @@ let navbar = document.querySelector('.navbar');
 menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+});
+
+// Permite abrir os projetos também pelo teclado.
+document.querySelectorAll('.card[role="link"]').forEach(card => {
+    card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            card.click();
+        }
+    });
 });
 
 // header sticks scroll //

@@ -24,6 +24,13 @@ section {
   z-index: 99;
 }
 
+.eyebrow {
+  color: var(--main-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
 .home-content h1 {
   position: relative;
   display: inline-block;
@@ -184,12 +191,27 @@ section {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 0.2re solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 20px;
   color: var(--main-color);
   z-index: 1;
   overflow: hidden;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover, .card:focus-visible {
+  transform: translateY(-.4rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .14);
+}
+
+.card:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: .3rem solid var(--main-color);
+  outline-offset: .3rem;
 }
 
 .home-sci a:hover {
@@ -618,6 +640,37 @@ section {
 .contateme {
   min-height: auto;
   padding-bottom: 7rem;
+}
+
+.contact-intro {
+  max-width: 62rem;
+  margin: -1rem auto 1.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+}
+
+.contact-links a {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.contact-links i {
+  vertical-align: middle;
+  font-size: 2.2rem;
+}
+
+/* Os campos continuam visíveis mesmo quando a animação de scroll ainda não foi acionada. */
+.contateme .animate.scroll {
+  display: none;
 }
 
 .contateme form {
