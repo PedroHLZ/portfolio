@@ -1,28 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-
-    <div class="container">
-        <h1>Lista de Tarefas</h1>
-        <div class="formtarefa">
-            <input type="text" id="inserirtarefa" placeholder="Digite uma tarefa">
-            <button id="addButton">
-                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-1" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-            </button>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Organizador de tarefas | Pedro Queiroz</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../demo.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="demo">
+      <a class="text-link" href="../../index.html#projetos"
+        >← Voltar ao portfólio</a
+      >
+      <header class="demo-heading">
+        <p class="eyebrow">PROJETO DE ESTUDO / JAVASCRIPT</p>
+        <h1>Um passo de cada vez.</h1>
+        <p>Organize o dia. Seus dados ficam somente neste navegador.</p>
+      </header>
+      <form id="task-form">
+        <label for="task-input">Qual é a próxima tarefa?</label>
+        <div class="task-entry">
+          <input
+            id="task-input"
+            maxlength="160"
+            required
+            placeholder="Ex.: revisar meu projeto"
+            autocomplete="off"
+          /><button class="button primary" type="submit">Adicionar</button>
         </div>
-        <ul id="listadetarefa" class="listadetarefa">
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-
+      </form>
+      <div class="task-toolbar">
+        <div class="filters" role="group" aria-label="Filtrar tarefas">
+          <button
+            class="button secondary"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            Todas</button
+          ><button
+            class="button secondary"
+            data-filter="active"
+            aria-pressed="false"
+          >
+            Pendentes</button
+          ><button
+            class="button secondary"
+            data-filter="done"
+            aria-pressed="false"
+          >
+            Concluídas
+          </button>
+        </div>
+        <p id="task-count"></p>
+      </div>
+      <ul id="task-list" class="task-list" aria-label="Tarefas"></ul>
+      <p id="empty-state" class="empty-state"></p>
+      <p id="storage-status" role="status"></p>
+      <p id="task-status" class="sr-only" role="status"></p>
+      <aside class="demo-notes">
+        <h2>Sobre o projeto</h2>
+        <p>
+          Prática de manipulação do DOM, persistência local e filtros. As
+          tarefas são texto, nunca interpretadas como HTML. Não há conta,
+          sincronização ou envio para um servidor.
+        </p>
+      </aside>
+    </main>
+  </body>
 </html>

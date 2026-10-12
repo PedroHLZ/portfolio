@@ -1,0 +1,64 @@
+body {
+  isolation: isolate;
+}
+#particle-scene {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.8;
+}
+.hero-copy {
+  background: radial-gradient(
+    ellipse at left,
+    #111216ed 15%,
+    #11121666 65%,
+    transparent
+  );
+}
+.portrait {
+  background: #22252a9c;
+}
+.about,
+.contact {
+  background: #1a1c21d9;
+}
+.stack-strip {
+  background: #111216b3;
+}
+.section-heading,
+.education,
+.skills-grid {
+  text-shadow: 0 2px 12px #111216;
+}
+#particle-toggle {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 11;
+  border: 1px solid var(--line);
+  background: #111216ee;
+  color: var(--text);
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 0.75rem;
+  min-height: 44px;
+}
+#particle-toggle:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+.footer {
+  padding-bottom: 85px;
+}
+@media (max-width: 680px) {
+  #particle-scene {
+    opacity: 0.48;
+  }
+  #particle-toggle {
+    right: 12px;
+    bottom: 12px;
+  }
+}
